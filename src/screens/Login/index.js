@@ -26,6 +26,7 @@ export default class LoginScreen extends Component {
         />
         <View style={{ marginVertical: 30 }}>
           <TextInput
+            keyboardType="numeric"
             style={s.input}
             placeholder="Phone"
             underlineColorAndroid={COLORS.blue}

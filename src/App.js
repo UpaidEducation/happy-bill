@@ -1,19 +1,8 @@
 import React, { Component } from "react";
-import { createStackNavigator, createAppContainer } from "react-navigation";
-import LoginView from "./components/LoginView";
-import RegisterView from "./components/RegisterView";
-import ConfirmSmsView from "./components/ConfirmSmsView";
+import Router from "./Router";
 
 export default class App extends Component {
   render() {
-    return <AppContainer />;
+    return <Router />;
   }
 }
-
-const AppNavigator = createStackNavigator({
-  Login: LoginView,
-  Register: RegisterView,
-  ConfirmSms: ConfirmSmsView
-});
-
-const AppContainer = createAppContainer(AppNavigator);

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Button, TextInput, Image } from 'react-native';
+import { View, Button, TextInput, Image, ToastAndroid } from 'react-native';
 import { COLORS } from '../../styles';
 import s from './styles';
 
@@ -13,7 +13,7 @@ export default class LoginScreen extends Component {
   };
 
   handleLoginPress = () => {
-    console.log(this.state);
+    ToastAndroid.show('🎉 Form submitted, hurray! 🎉', ToastAndroid.SHORT);
   };
 
   render() {
@@ -22,7 +22,7 @@ export default class LoginScreen extends Component {
       <View style={s.wrapper}>
         <Image
           source={require('../../images/logo.png')}
-          style={{ width: '65%', height: null, aspectRatio: 362 / 80, alignSelf: 'center', marginTop: 50 }}
+          style={{ width: '65%', height: null, aspectRatio: 181 / 40, alignSelf: 'center', marginTop: 50 }}
         />
         <View style={{ marginVertical: 30 }}>
           <TextInput

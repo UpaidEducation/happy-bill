@@ -10,8 +10,7 @@ export default class ConfirmSmsScreen extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      this.props.navigation.navigate('Login');
-      ToastAndroid.show('You can now log in! Or can you?', ToastAndroid.SHORT);
+      this.props.navigation.navigate('SetPin');
     }, 1100);
   }
 

@@ -34,6 +34,7 @@ export default class LoginScreen extends Component {
             onChangeText={phone => this.setState({ phone })}
           />
           <TextInput
+            secureTextEntry={true}
             style={s.input}
             placeholder="Password"
             underlineColorAndroid={COLORS.blue}
